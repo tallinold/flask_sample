@@ -1,0 +1,8 @@
+stack_name: Projects/Sample/Flask/VPC/main
+arguments:
+  soa: tallinold.jiffyconfig.com
+  DockerProvider: docker.io
+  DockerUsername: tallinold
+  DockerConfigEnv: public
+  DockerRepoName: <flask_sample>
+  DockerEnvCred: jiffy/users/tallinold/default/docker
