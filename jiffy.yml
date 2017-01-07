@@ -4,5 +4,5 @@ arguments:
   DockerProvider: docker.io
   DockerUsername: tallinold
   DockerConfigEnv: public
-  DockerRepoName: <flask_sample>
+  DockerRepoName: repodocker
   DockerEnvCred: jiffy/users/tallinold/default/docker
