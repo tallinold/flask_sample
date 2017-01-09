@@ -5,4 +5,3 @@ arguments:
   DockerUsername: tallinold
   DockerConfigEnv: public
   DockerRepoName: repodocker
-  DockerEnvCred: jiffy/users/tallinold/default/docker
