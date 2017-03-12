@@ -5,27 +5,27 @@ arguments:
   DockerUsername: tallinold
   DockerConfigEnv: public
   DockerRepoName: repodocker
-     schedule:
-         vpc:
-             archive:
-                description: Create VPC in AWS
-                timeout: 3600
-                timewait: 300
-                cleanup:
-                    instance: clear
-             conditions:
-                 retries: 1
-             failure:
-                delete_primary_instance: True
-         db:
-             conditions:
-                 retries: 1
-                 dependency:
-                     - vpc
-             archive:
-                description: Create RDS Database in EC2
-                timeout: 3600
-                timewait: 300
-                cleanup:
-                    instance: clear
+  schedule:
+      vpc:
+          archive:
+             description: Create VPC in AWS
+             timeout: 3600
+             timewait: 300
+             cleanup:
+                 instance: clear
+          conditions:
+              retries: 1
+          failure:
+             delete_primary_instance: True
+      db:
+          conditions:
+              retries: 1
+              dependency:
+                  - vpc
+          archive:
+             description: Create RDS Database in EC2
+             timeout: 3600
+             timewait: 300
+             cleanup:
+                 instance: clear
 
