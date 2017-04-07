@@ -1,8 +1,7 @@
 stack_name: Projects/Sample/Flask/VPC/main
 arguments:
-  soa: tallinold.jiffyconfig.com
   DockerProvider: docker.io
-  DockerUsername: tallinold
+  DockerUsername: tallinoid
   DockerConfigEnv: public
   DockerRepoName: repodocker
   schedule:
@@ -28,4 +27,3 @@ arguments:
              timewait: 300
              cleanup:
                  instance: clear
-
